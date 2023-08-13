@@ -5,7 +5,7 @@ import { IoMdCloudDownload } from "react-icons/io";
 const AboutMe = () => {
   return (
     <div className="md:container">
-      <Title title="درباره من" />
+      <Title id="aboutme" title="درباره من" />
       <div className="flex items-center flex-col md:flex-row">
         <div className="flex-1">
           <img src="/images/abuthero.png" alt="" />

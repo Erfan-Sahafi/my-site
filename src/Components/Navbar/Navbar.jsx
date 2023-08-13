@@ -15,7 +15,7 @@ const Navbar = () => {
             {navItem.map((item) => (
               <li key={item.id} className="text-white">
                 <a
-                  href="#"
+                  href="#aboutme"
                   className="font-IranSansDemiBold ease-in duration-200 hover:text-blue-400"
                 >
                   {item.title}

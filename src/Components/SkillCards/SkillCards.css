@@ -1,0 +1,89 @@
+.parent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20;
+}
+.parent .card{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .card .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.parent .card .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+.parent .card .percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 2;
+    stroke: #191919;
+    transform: translate(5px,5px);
+}
+.parent .card .percent svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    opacity: 0;
+    stroke-dashoffset: calc(440 - (440 * 85)/100);
+    animation-delay: 1.5s;
+}
+.dot {
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+}
+
+.dot::before{
+    content: ' ';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #04fc43;
+    box-shadow: 0 0 10px #04fc43,
+    0 0 30px #04fc43;
+}
+.number{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.number h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.number h2 span{
+    font-weight: 300;
+    color: #fff;
+    font-size: .5em;
+}
+.number p{
+    font-weight: 300;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.75);
+}
