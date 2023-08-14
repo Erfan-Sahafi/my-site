@@ -3,14 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20;
 }
 .parent .card{
-    position: relative;
-    width: 220px;
-    height: 220px;
-    background-color: #2a2a2a;
+    /* position: relative; */
+    width: 250px;
+    height: 250px;
+    background-color: #2a2a2a; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,15 +35,33 @@
 .parent .card .percent svg circle:nth-child(2){
     stroke-dasharray: 440;
     opacity: 0;
-    stroke-dashoffset: calc(440 - (440 * 85)/100);
+    stroke-dashoffset: calc(440 - (440 * var(--num))/100);
     animation-delay: 1.5s;
+    stroke: var(--ringcl);
+    animation: fadeIn 1s linear forwards;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .dot {
     position: absolute;
     inset: 5px;
     z-index: 10;
+    animation: AnimatDot 2s linear forwards;
 }
-
+@keyframes AnimatDot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
 .dot::before{
     content: ' ';
     position: absolute;
@@ -55,9 +71,9 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #04fc43;
-    box-shadow: 0 0 10px #04fc43,
-    0 0 30px #04fc43;
+    background-color: var(--ringcl);
+    box-shadow: 0 0 10px var(--ringcl),
+    0 0 30px var(--ringcl);
 }
 .number{
     position: absolute;

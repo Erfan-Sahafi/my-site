@@ -23,20 +23,6 @@ export default {
         md: "768px",
         lg: "1024px",
         xl: "1280px",
-      },
-      animation:{
-        fadeIn: 'fadeIn 1s linear forwards',
-        Dote: 'Dote 2s linear forwards'
-      },
-      keyframes:{
-         fadeIn:{
-          '0%': {opacity : '0'},
-          '100%': {opacity : '1'},
-        },
-        Dote:{
-          '0%': {transform:'rotate(0deg)'},
-          '100%': {transform:'rotate(calc(3.6deg * 85))'}
-        }
       }
     },
   },
