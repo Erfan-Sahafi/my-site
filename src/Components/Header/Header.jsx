@@ -1,7 +1,12 @@
-import React from "react";
-import './header.css'
+import React, { useEffect } from "react";
+import "./header.css";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
+
 
 const Header = () => {
+  
+
   return (
     <>
       <div className="min-h-screen">
@@ -17,13 +22,17 @@ const Header = () => {
             </div>
             <div className="font-IranSans text-white w-[300px] md:w-[500px] text-justify">
               <p>
-                برنامه نویس فرانت اند <span className="font-IranSansDemiBold text-xl text-blue-400">React js</span> یک سال هست که در ایـن زمینـه
-                فعـالیت میکنـم و بسـیار مشتـاقم بـا انگیزه و روحیه ای که دارم با
-                چالش های جدیدی رو به رو بشم و تجربه های جدید کسب کنم.
+                برنامه نویس{" "}
+                <span className="font-IranSansDemiBold text-xl text-blue-400">
+                  React js
+                </span>{" "}
+                هستم.یکسال است که در این زمینه فعالیت میکنم؛ بسیار مشتاقم با
+                انگیزه ای که دارم با چالش های جدیدی رو به رو بشم و تجربه های
+                جدید کسب کنم<span>&#9996;</span>
               </p>
             </div>
           </div>
-          <div className="h-full flex">
+          <div className="h-full flex" data-aos="fade-up">
             <img src="/images/me.png" alt="me" />
           </div>
         </div>

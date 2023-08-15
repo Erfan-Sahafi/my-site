@@ -20,7 +20,7 @@ const Skills = () => {
 
   return (
     <div className="container">
-      <Title title="مهارت ها" />
+      <Title id="skill" title="مهارت ها" />
       <div className="w-full md:w-[90%] hidden mx-auto sm:flex sm:gap-x-8 sm:gap-y-5 justify-center items-center flex-wrap">
         {skills.map((skill) => (
           <SkillCards key={skill.id} {...skill} />

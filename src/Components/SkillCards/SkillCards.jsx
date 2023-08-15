@@ -11,7 +11,7 @@ const SkillCards = (props) => {
   
 
   return (
-    <div className="parent">
+    <div className="parent" data-aos="flip-right">
       <div className="card">
         <div className="percent" style={{ '--ringcl':`${props.color}`,'--num':`${props.percent}` }}>
           <div className="dot"></div>

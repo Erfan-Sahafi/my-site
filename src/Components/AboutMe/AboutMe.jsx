@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "../Title/Title";
+import { social } from "../../data";
 import { IoMdCloudDownload } from "react-icons/io";
 
 const AboutMe = () => {
@@ -7,11 +8,11 @@ const AboutMe = () => {
     <div className="md:container">
       <Title id="aboutme" title="درباره من" />
       <div className="flex items-center flex-col md:flex-row">
-        <div className="flex-1">
+        <div className="flex-1" data-aos="fade-left">
           <img src="/images/abuthero.png" alt="" />
         </div>
-        <div className="w-full md:w-1/2">
-          <div className="flex md:gap-12 p-1 justify-between sm:justify-evenly">
+        <div className="w-full md:w-1/2" data-aos="fade-down">
+          <div className="flex md:gap-12 p-1 justify-between sm:justify-evenly" >
             <div>
               <ul className="flex flex-col gap-4">
                 <li className="text-blue-400 font-IranSansBolddn text-xs xs:text-base md:text-xl">
@@ -69,10 +70,33 @@ const AboutMe = () => {
               </ul>
             </div>
           </div>
+          <div className="flex items-center justify-center gap-4 text-white text-4xl my-4">
+            {social.map((item) => (
+              <a
+                href={`${
+                  item.title === "email"
+                    ? `mailto: ${item.href}`
+                    : `${item.href}`
+                }`}
+                target="_blank"
+                key={item.id}
+                className="flex flex-col gap-2 items-center"
+              >
+                {item.icon}
+                <span className="text-xs font-IranSansdn uppercase">
+                  {item.title}
+                </span>
+              </a>
+            ))}
+          </div>
           <div className="flex items-center justify-center mt-8 font-IranSansDemiBold text-white">
-            <a href="/files/resome.pdf" className="flex items-center gap-4 bg-blue-500 px-5 py-3 rounded-full ease-in duration-200 hover:bg-blue-600" download={true}>
+            <a
+              href="/files/resome.pdf"
+              className="flex items-center gap-4 bg-blue-500 px-5 py-3 rounded-full ease-in duration-200 hover:bg-blue-600"
+              download={true}
+            >
               دانلود رزومه
-              <IoMdCloudDownload className="text-2xl"/>
+              <IoMdCloudDownload className="text-2xl" />
             </a>
           </div>
         </div>
