@@ -34,7 +34,7 @@ const navItem = [
 const social = [
   {id:1,title:'github',href:"https://github.com/Erfan-Sahafi",icon:<AiFillGithub className="text-white"/>},
   {id:2,title:'telegram',href:"https://t.me/erfan_sahafi",icon:<FaTelegram className="text-sky-500"/>},
-  {id:3,title:'instagram',href:"http://www.instagram.com/erfan_sl9",icon:<AiOutlineInstagram className="text-pink-600"/>},
+  {id:3,title:'instagram',href:"https://instagram.com/erfan_sahafi?igshid=NTc4MTIwNjQ2YQ==",icon:<AiOutlineInstagram className="text-pink-600"/>},
   {id:4,title:'email',href:"erfansahafi9@gamil.com",icon:<HiOutlineMail className="text-zinc-300"/>},
 ]
 const skills = [
