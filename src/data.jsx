@@ -1,9 +1,9 @@
-import { AiFillGithub, AiFillHome, AiFillInstagram, AiOutlineInstagram } from "react-icons/ai";
+import { AiFillGithub, AiFillHome , AiOutlineInstagram } from "react-icons/ai";
 import { FaUser, FaFolderOpen, FaCode, FaTelegram } from "react-icons/fa";
 import { BiLogoReact, BiLogoTailwindCss } from "react-icons/bi";
 import { HiOutlineMail } from 'react-icons/hi'
 import { RiJavascriptFill } from "react-icons/ri";
-import { MdEmail } from "react-icons/md";
+
 
 const navItem = [
   {
@@ -38,11 +38,12 @@ const social = [
   {id:4,title:'email',href:"erfansahafi9@gamil.com",icon:<HiOutlineMail className="text-zinc-300"/>},
 ]
 const skills = [
-  { id: 5, title: "react js", color: "#0ea5e9", percent: 80 },
-  { id: 6, title: "next js", color: "#fff", percent: 50 },
-  { id: 4, title: "js", color: "#eab308", percent: 78 },
-  { id: 1, title: "html", color: "#ea580c", percent: 90 },
-  { id: 3, title: "css", color: "#0284c7", percent: 75 },
+  { id: 1, title: "react js", color: "#0ea5e9", percent: 80 },
+  { id: 2, title: "next js", color: "#fff", percent: 50 },
+  { id: 3, title: "Java Script", color: "#eab308", percent: 78 },
+  { id: 4, title: "Type Script", color: "#0ea5e9", percent: 70 },
+  { id: 5, title: "html", color: "#ea580c", percent: 90 },
+  { id: 6, title: "css", color: "#0284c7", percent: 75 },
   { id: 7, title: "bootstrap", color: "#9333ea", percent: 85 },
   { id: 8, title: "tailwind", color: "#38BDF8", percent: 95 },
   { id: 9, title: "mui", color: "#22c55e", percent: 70 },

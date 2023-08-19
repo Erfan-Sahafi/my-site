@@ -91,7 +91,7 @@ const AboutMe = () => {
           </div>
           <div className="flex items-center justify-center mt-8 font-IranSansDemiBold text-white">
             <a
-              href="/files/resome.pdf"
+              href="/files/MyResume.pdf"
               className="flex items-center gap-4 bg-blue-500 px-5 py-3 rounded-full ease-in duration-200 hover:bg-blue-600"
               download={true}
             >
