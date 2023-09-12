@@ -39,7 +39,7 @@ const social = [
 ]
 const skills = [
   { id: 1, title: "react js", color: "#0ea5e9", percent: 80 },
-  { id: 2, title: "next js", color: "#fff", percent: 50 },
+  { id: 2, title: "next js", color: "#fff", percent: 70 },
   { id: 3, title: "Java Script", color: "#eab308", percent: 78 },
   { id: 4, title: "Type Script", color: "#0ea5e9", percent: 70 },
   { id: 5, title: "html", color: "#ea580c", percent: 90 },
