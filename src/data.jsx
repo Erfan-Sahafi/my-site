@@ -1,6 +1,7 @@
 import { AiFillGithub, AiFillHome , AiOutlineInstagram } from "react-icons/ai";
 import { FaUser, FaFolderOpen, FaCode, FaTelegram } from "react-icons/fa";
 import { BiLogoReact, BiLogoTailwindCss } from "react-icons/bi";
+import { BsLinkedin } from "react-icons/bs"
 import { HiOutlineMail } from 'react-icons/hi'
 import { RiJavascriptFill } from "react-icons/ri";
 
@@ -34,6 +35,7 @@ const navItem = [
 const social = [
   {id:1,title:'github',href:"https://github.com/Erfan-Sahafi",icon:<AiFillGithub className="text-white"/>},
   {id:2,title:'telegram',href:"https://t.me/erfan_sahafi",icon:<FaTelegram className="text-sky-500"/>},
+  {id:5,title:'linkedin',href:"https://www.linkedin.com/in/erfan-sahafi/",icon:<BsLinkedin className="text-[#0A66C2]"/>},
   {id:3,title:'instagram',href:"https://instagram.com/erfan_sahafi?igshid=NTc4MTIwNjQ2YQ==",icon:<AiOutlineInstagram className="text-pink-600"/>},
   {id:4,title:'email',href:"erfansahafi9@gamil.com",icon:<HiOutlineMail className="text-zinc-300"/>},
 ]
