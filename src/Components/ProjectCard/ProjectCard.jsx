@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
         <h3 className="font-IranSansBold text-blue-500 text-xl">
           {props.title}
         </h3>
-        <p className="font-IranSansdn leading-6 text-white tracking-tight">
+        <p className="font-IranSansdn leading-6 text-justify text-white tracking-tight">
           {props.desc}
         </p>
         <div className="flex gap-3 text-white items-center justify-end font-IranSansBolddn">

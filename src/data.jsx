@@ -1,8 +1,9 @@
 import { AiFillGithub, AiFillHome , AiOutlineInstagram } from "react-icons/ai";
 import { FaUser, FaFolderOpen, FaCode, FaTelegram } from "react-icons/fa";
-import { BiLogoReact, BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoReact, BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
 import { BsLinkedin } from "react-icons/bs"
 import { HiOutlineMail } from 'react-icons/hi'
+import { SiNextdotjs } from "react-icons/si";
 import { RiJavascriptFill } from "react-icons/ri";
 
 
@@ -41,14 +42,14 @@ const social = [
 ]
 const skills = [
   { id: 1, title: "react js", color: "#0ea5e9", percent: 80 },
-  { id: 2, title: "next js", color: "#fff", percent: 70 },
-  { id: 3, title: "Java Script", color: "#eab308", percent: 78 },
-  { id: 4, title: "Type Script", color: "#0ea5e9", percent: 70 },
-  { id: 5, title: "html", color: "#ea580c", percent: 90 },
-  { id: 6, title: "css", color: "#0284c7", percent: 75 },
+  { id: 2, title: "next js", color: "#fff", percent: 80 },
+  { id: 3, title: "Java Script", color: "#eab308", percent: 85 },
+  { id: 4, title: "Type Script", color: "#0ea5e9", percent: 75 },
+  { id: 5, title: "html", color: "#ea580c", percent: 100 },
+  { id: 6, title: "css", color: "#0284c7", percent: 90 },
   { id: 7, title: "bootstrap", color: "#9333ea", percent: 85 },
-  { id: 8, title: "tailwind", color: "#38BDF8", percent: 95 },
-  { id: 9, title: "mui", color: "#22c55e", percent: 70 },
+  { id: 8, title: "tailwind", color: "#38BDF8", percent: 90 },
+  { id: 9, title: "mui", color: "#22c55e", percent: 65 },
 ];
 const projects = [
   {
@@ -64,16 +65,40 @@ const projects = [
       },
       {
         id: 2,
-        title: "java script",
+        title: "Java Script",
         icon: <RiJavascriptFill className="text-xl text-yellow-300" />,
       },
       {
         id: 1,
-        title: "react",
+        title: "React Js",
         icon: <BiLogoReact className="text-xl text-blue-300" />,
       },
     ],
     href: "https://fastfoodshope.iran.liara.run/",
+  },
+  {
+    id: 2,
+    title: "پروژه پنل ادمین",
+    img: "/images/admin.jpeg",
+    desc: "این وب سایت نمونه ای از پروژه پنل مدیریت است که از طریق آن می توانیم اطلاعات کسب و کار خود را مشاهده کنیم.لطفا برای مشاهده وبسایت از Vpn استفاده کنید.",
+    technology: [
+      {
+        id: 3,
+        title: "Tailwind",
+        icon: <BiLogoTailwindCss className="text-xl text-blue-400" />,
+      },
+      {
+        id: 2,
+        title: "Type Script",
+        icon: <BiLogoTypescript className="text-xl fill-blue-500" />,
+      },
+      {
+        id: 1,
+        title: "Next Js",
+        icon: <SiNextdotjs className="text-xl" />,
+      },
+    ],
+    href: "https://dashboard-admin-tau.vercel.app/",
   },
 ];
 export { navItem, skills, projects,social };
