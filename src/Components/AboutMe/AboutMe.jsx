@@ -33,12 +33,7 @@ const AboutMe = () => {
                     21
                   </span>
                 </li>
-                <li className="text-blue-400 font-IranSansBolddn text-xs xs:text-base md:text-xl">
-                  تحصیلات:
-                  <span className="text-white mr-1 text-sm xs:text-base">
-                    دانشجو کارشناسی
-                  </span>
-                </li>
+               
               </ul>
             </div>
             <div>
@@ -56,15 +51,9 @@ const AboutMe = () => {
                   </span>
                 </li>
                 <li className="text-blue-400 font-IranSansBolddn text-xs xs:text-base md:text-xl">
-                  استان:
+                  تحصیلات:
                   <span className="text-white mr-1 text-sm xs:text-base">
-                    سمنان
-                  </span>
-                </li>
-                <li className="text-blue-400 font-IranSansBolddn text-xs xs:text-base md:text-xl">
-                  شهرستان:
-                  <span className="text-white mr-1 text-sm xs:text-base">
-                    گرمسار
+                    دانشجو کارشناسی
                   </span>
                 </li>
               </ul>
@@ -91,7 +80,7 @@ const AboutMe = () => {
           </div>
           <div className="flex items-center justify-center mt-8 font-IranSansDemiBold text-white">
             <a
-              href="/files/MyResume.pdf"
+              href="/files/erfan.pdf"
               className="flex items-center gap-4 bg-blue-500 px-5 py-3 rounded-full ease-in duration-200 hover:bg-blue-600"
               download={true}
             >
