@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Header from "./Components/Header/Header";
-import AboutMe from "./Components/AboutMe/AboutMe";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
 import ContactMe from "./Components/Footer/Footer";
@@ -24,7 +23,6 @@ const App = () => {
     <>
       <Navbar />
       <Header />
-      <AboutMe />
       <Skills />
       <Projects />
       <ContactMe />

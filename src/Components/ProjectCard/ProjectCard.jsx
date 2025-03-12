@@ -20,9 +20,9 @@ const ProjectCard = (props) => {
         <p className="font-IranSansdn leading-6 text-justify text-white tracking-tight">
           {props.desc}
         </p>
-        <div className="flex gap-3 text-white items-center justify-end font-IranSansBolddn">
+        <div className="flex gap-2 text-white items-center justify-end font-IranSansBolddn">
           {props?.technology?.map((tec) => (
-            <span key={tec.id} className="flex items-center">
+            <span key={tec.id} className="flex items-center text-xs md:text-sm">
               {tec.title}
               {tec.icon}
             </span>

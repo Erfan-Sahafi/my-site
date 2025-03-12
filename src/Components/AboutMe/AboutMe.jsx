@@ -5,7 +5,7 @@ import { IoMdCloudDownload } from "react-icons/io";
 
 const AboutMe = () => {
   return (
-    <div className="md:container">
+    <div className="md:container px-10">
       <Title id="aboutme" title="درباره من" />
       <div className="flex items-center flex-col md:flex-row">
         <div className="flex-1" data-aos="fade-left">
@@ -30,7 +30,7 @@ const AboutMe = () => {
                 <li className="text-blue-400 font-IranSansBolddn text-xs xs:text-base md:text-xl">
                   سن:
                   <span className="text-white mr-1 text-sm xs:text-base">
-                    21
+                    22
                   </span>
                 </li>
                

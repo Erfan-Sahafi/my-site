@@ -2,32 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
+  @font-face {
+    font-family: IranSansdn;
+    src: url(/fonts/iransansdn.woff2);
+  }
+  @font-face {
+    font-family: IranSansBolddn;
+    src: url(/fonts/iransansdnbold.woff2);
+  }
+  @font-face {
+    font-family: IranSans;
+    src: url(/fonts/IRANSansX-Regular.woff2);
+  }
+  @font-face {
+    font-family: IranSansDemiBold;
+    src: url(/fonts/IRANSansX-DemiBold.woff2);
+  }
+  @font-face {
+    font-family: IranSansBold;
+    src: url(/fonts/IRANSansX-Bold.woff2);
+  }
 
-    @font-face {
-        font-family: IranSansdn;
-        src: url(/fonts/iransansdn.woff2);
+  body {
+    background-color: #27272a;
+  }
+  @media screen and (min-width: 640px) {
+    body::-webkit-scrollbar {
+      width: 8px;
     }
-    @font-face {
-        font-family: IranSansBolddn;
-        src: url(/fonts/iransansdnbold.woff2);
+    body::-webkit-scrollbar-track {
+      background-color: none;
     }
-    @font-face {
-        font-family: IranSans;
-        src: url(/fonts/IRANSansX-Regular.woff2);
+    body::-webkit-scrollbar-thumb {
+      background-color: #60a5fa;
+      border-radius: 5px;
+      scrollbar-width: thin;
     }
-    @font-face {
-        font-family: IranSansDemiBold;
-        src: url(/fonts/IRANSansX-DemiBold.woff2);
-    }
-    @font-face {
-        font-family: IranSansBold;
-        src: url(/fonts/IRANSansX-Bold.woff2);
-    }
-
-
-    body{
-        background-color: #27272a;
-    }
+  }
 }
